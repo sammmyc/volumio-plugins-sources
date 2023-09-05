@@ -1,0 +1,14 @@
+{
+  "power_command": {
+    "type": "string",
+    "value": "KEY_POWER"
+  },
+  "volume_up": {
+    "type": "string",
+    "value": "KEY_VOLUMEUP"
+  },
+  "volume_down": {
+    "type": "string",
+    "value": "KEY_VOLUMEDOWN"
+  }
+}

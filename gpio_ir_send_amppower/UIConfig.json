@@ -1,0 +1,33 @@
+{
+  "page": {
+    "label": "TRANSLATE.PLUGIN_CONFIGURATION"
+  },
+  "sections": [
+	{
+      "id": "section_header",
+      "element": "section",
+      "label": "Power ON OFF",
+      "icon": "fa-plug",
+      "saveButton": {
+        "label": "OK",
+		"data": [
+          "Button1"
+        ]
+      },
+      "content": [
+        {
+		  "id": "Button1",
+		  "element": "button",
+		  "label": "Power cycle",
+		  'description': 'Doing it... when I know how',
+		  'onClick': {
+		    'type': 'emit',
+            'data': '',
+            'message': '',
+            'askForConfirm': {'title': 'Confirm', 'message': 'are you sure?'}
+		  }
+        }
+      ]
+    }
+  ]
+}

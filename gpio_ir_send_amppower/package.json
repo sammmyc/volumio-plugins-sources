@@ -1,0 +1,36 @@
+{
+	"name": "gpio_ir_send_amppower",
+	"version": "0.0.1",
+	"description": "Use IR LED to send power cycle signal to remote amplifier controlled by GPIO",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Sam Campbell",
+	"license": "ISC",
+	"repository": "https://github.com/sammmyc/volumio-plugins-sources",
+	"volumio_info": {
+		"prettyName": "GPIO driven IR_send for Amp control",
+		"icon": "fa-duotone fa-satellite-dish",
+		"plugin_type": "system_hardware",
+		"architectures": [
+			"amd64",
+			"armhf",
+			"i386"
+		],
+		"os": [
+			"buster"
+		],
+		"details": "Build an IR blaster and connect it to a GPIO pin.  This plugin can then send IR signals to an amplifier across the room to power cycleand so on",
+		"changelog": "Initial release - not very configurable, could be bugs"
+	},
+	"engines": {
+		"node": ">=14",
+		"volumio": ">=3"
+	},
+	"dependencies": {
+		"fs-extra": "^0.28.0",
+		"kew": "^0.7.0",
+		"v-conf": "^1.4.0"
+	}
+}
